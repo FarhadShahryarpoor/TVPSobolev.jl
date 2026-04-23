@@ -21,12 +21,21 @@
 
 ## What it does
 
-Fits the functional coefficient model `y_t = X_t' θ(t/T) + u_t` where
-`X_t ∈ ℝᵖ` has up to `s ≤ p` endogenous components and `Z_t` are the
-corresponding instruments. Two estimators are provided: a first-order
-Sobolev (natural linear spline) and a natural cubic spline. Both use the
-Gao and Tsay bias correction and a multiplier-bootstrap simultaneous
-confidence band.
+Estimates the functional coefficient model
+
+$$
+y_t \;=\; X_t^{\top}\, \theta(t/T) \;+\; u_t, \qquad t = 1, \dots, T,
+$$
+
+where
+
+- $y_t \in \mathbb{R}$ is the scalar outcome at time $t$;
+- $X_t \in \mathbb{R}^{p}$ is the regressor vector, of which up to $s \le p$ components may be endogenous;
+- $\theta : [0,1] \to \mathbb{R}^{p}$ is the unknown vector of functional coefficients, evaluated at rescaled time $\tau = t/T \in [0,1]$;
+- $u_t$ is the structural error, satisfying $\mathbb{E}[u_t \mid Z_t] = 0$;
+- $Z_t \in \mathbb{R}^{q}$ collects the instruments, with $q \ge s$.
+
+Two estimators are provided: a first-order Sobolev estimator (natural linear spline) and a natural cubic spline. Both use the Gao and Tsay bias correction and a multiplier-bootstrap simultaneous confidence band.
 
 Written for ECON 622 at UBC. Paper: [`project_report_622.pdf`](project_report_622.pdf).
 
