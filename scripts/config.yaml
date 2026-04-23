@@ -1,0 +1,28 @@
+# Monte Carlo configuration. All parameters that change between runs live
+# here and nowhere else in the codebase (per CLAUDE.md: no hardcoded
+# parameters in scripts).
+
+mc:
+  designs: [lzh, str]
+  T_values: [200, 400, 800]
+  n_rep: 1000
+  n_boot: 1000
+  seed: 2026
+  trim: 0.05
+  methods: [sobolev_m1, ncs]
+
+loocv:
+  # Log-grid lower / upper bounds; NCS needs a wider lower bound than m=1
+  # because the penalty null space is larger and CV can land on very small λ.
+  sobolev_m1:
+    log_min: -10.0
+    log_max:   5.0
+    n_grid:   80
+  ncs:
+    log_min: -18.0
+    log_max:   5.0
+    n_grid:   80
+
+paths:
+  results_dir: results
+  figures_dir: figures

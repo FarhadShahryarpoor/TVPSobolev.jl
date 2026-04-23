@@ -1,0 +1,33 @@
+*.jl.*.cov
+*.jl.cov
+*.jl.mem
+.DS_Store
+/dev/
+/docs/build/
+/docs/site/
+*~
+
+# Library-level Manifest is not committed (stdlib-only lib; scripts/ and
+# docs/ keep their pinned Manifests).
+/Manifest.toml
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.nav
+*.snm
+*.synctex.gz
+
+# Large per-τ MC CSVs and NKPC point-estimate CSVs — regenerable from the
+# drivers, and single files exceed GitHub's 100 MB limit.
+results/**/*.csv
+
+# Python
+__pycache__/
+*.pyc

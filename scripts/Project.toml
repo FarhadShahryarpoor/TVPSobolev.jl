@@ -1,0 +1,28 @@
+name = "TVPSobolevScripts"
+authors = ["Farhad Shahryarpoor"]
+
+# Environment for the Monte Carlo / NKPC / figure drivers in this folder.
+# The TVPSobolev library itself (in ../src) uses only stdlib; the scripts add
+# plotting and I/O packages. A committed Manifest.toml in this folder pins
+# every transitive dependency so the scripts reproduce bit-for-bit years
+# from now, independent of the Julia General registry's evolution.
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+TVPSobolev = "d2c5a7b0-1f3e-4d5c-8b6a-0e4a2f7b1c9d"
+
+[compat]
+Dates = "1"
+DelimitedFiles = "1"
+LaTeXStrings = "1"
+LinearAlgebra = "1"
+Plots = "1"
+Random = "1"
+Statistics = "1"
+julia = "1.10"

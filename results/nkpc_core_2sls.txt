@@ -1,0 +1,6 @@
+2SLS constant-parameter benchmark, core CPI
+  T = 806, p = 4, q = 8
+  c                     +0.194  (SE 0.8732)
+  ρ (forward Δπ)        +0.1275  (SE 0.4262)
+  γ (backward Δπ)       +0.2602  (SE 0.1223)
+  α (Δu)                +0.3812  (SE 0.2846)

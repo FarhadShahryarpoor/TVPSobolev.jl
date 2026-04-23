@@ -1,0 +1,6 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+TVPSobolev = "d2c5a7b0-1f3e-4d5c-8b6a-0e4a2f7b1c9d"
+
+[compat]
+Documenter = "1"

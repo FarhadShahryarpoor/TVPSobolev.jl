@@ -1,0 +1,28 @@
+name = "TVPSobolev"
+uuid = "d2c5a7b0-1f3e-4d5c-8b6a-0e4a2f7b1c9d"
+authors = ["Farhad Shahryarpoor"]
+version = "0.1.0"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[compat]
+Aqua = "0.8"
+LinearAlgebra = "1"
+Random = "1"
+SparseArrays = "1"
+Statistics = "1"
+Test = "1"
+TestItemRunner = "1"
+julia = "1.10"
+
+[extras]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+TestItemRunner = "f8b46487-2199-4994-9208-9a1283c18c0a"
+
+[targets]
+test = ["Aqua", "Test", "TestItemRunner"]
