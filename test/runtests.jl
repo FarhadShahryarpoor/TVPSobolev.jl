@@ -550,7 +550,7 @@ end
   K_F = build_fsmd_kernel(data.Z)
   K_ncs = ncs_penalty(T)
   p = size(data.X, 2)
-  λs = [1e-8, 1e-4, 1e-1, 1e2, 1e6]
+  λs = [1e-8, 1e-4, 1e-1, 1e2, 1e4]
   edfs = Float64[]
   for λ in λs
     sm = ncs_smoother(data.X, K_F, K_ncs, λ)
