@@ -3,7 +3,7 @@
 
 Pick `λ` by the Craven–Wahba LOOCV shortcut over the grid. Grid points
 where the normal matrix's Cholesky fails are skipped (`NaN` in the
-returned curve). Note that under F-SMD weighting the shortcut is an
+returned curve). Note that under smooth minimum distance weighting the shortcut is an
 approximation to true LOO, but a standard one. Returns
 `(λ, cv, grid, cv_curve)`.
 """

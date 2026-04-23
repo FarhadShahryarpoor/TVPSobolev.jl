@@ -1,7 +1,7 @@
 """
     build_fsmd_kernel(Z; ridge=1e-4)
 
-Build the F-SMD instrument kernel from `Z` (size `T × q`).
+Build the smooth minimum distance instrument kernel from `Z` (size `T × q`).
 
 Product Gaussian with bandwidth equal to the pooled std of `Z`, scaled by
 `1/T`, plus `ridge·I` on the diagonal. The normalisation and ridge match

@@ -32,7 +32,7 @@ end
 """
     ncs_estimate(y, X, K_F, K_ncs, λ)
 
-Closed-form NCS F-SMD estimate. Parametrises `θ̂ⱼ(τᵢ)` directly as the
+Closed-form NCS smooth minimum distance estimate. Parametrises `θ̂ⱼ(τᵢ)` directly as the
 knot value `α̂_{(j-1)T + i}` and solves one linear system. Returns `θ̂`
 as a `T × p` matrix.
 """

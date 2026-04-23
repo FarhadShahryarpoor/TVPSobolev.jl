@@ -19,7 +19,7 @@ end
 """
     sobolev_m1_estimate(y, X, K_F, G, G1, λ)
 
-Closed-form solution of the m=1 Sobolev F-SMD problem. Coefficients are
+Closed-form solution of the m=1 Sobolev smooth minimum distance problem. Coefficients are
 expanded in the representer basis `θⱼ(τ) = Σᵢ αⱼᵢ G(τ, τᵢ)` and `α` solves
 one linear system. Returns `θ̂` on the grid as a `T × p` matrix.
 """

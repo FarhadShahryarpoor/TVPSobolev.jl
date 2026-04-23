@@ -73,7 +73,7 @@ function run_nkpc(data; method::Symbol, outdir::AbstractString, title_prefix::Ab
   figdir = joinpath(outdir, "figures"); mkpath(figdir)
   T = length(data.y)
   τ = collect(range(1 / T, 1.0, length=T))
-  # Tiny ridge relative to K_F/T entries (O(1/T)) — preserves F-SMD weighting.
+  # Tiny ridge relative to K_F/T entries (O(1/T)) — preserves smooth minimum distance weighting.
   K_F = build_fsmd_kernel(data.Z; ridge=1e-6)
   if method === :sobolev_m1
     sm = sobolev_m1_grams(T)
