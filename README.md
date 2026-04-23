@@ -24,7 +24,7 @@
 Estimates the functional coefficient model
 
 $$
-y_t \;=\; X_t^{\top}\, \theta(t/T) \;+\; u_t, \qquad t = 1, \dots, T,
+y_t = X_t^{\top} \theta(\tau) + u_t, \qquad \tau = t/T \in [0,1], \quad t = 1, \dots, T,
 $$
 
 where
@@ -35,7 +35,7 @@ where
 - $u_t$ is the structural error, satisfying $\mathbb{E}[u_t \mid Z_t] = 0$;
 - $Z_t \in \mathbb{R}^{q}$ collects the instruments, with $q \ge s$.
 
-Two estimators are provided: a first-order Sobolev estimator (natural linear spline) and a natural cubic spline. Both use the Gao and Tsay bias correction and a multiplier-bootstrap simultaneous confidence band.
+Two estimators are provided: a natural linear spline smooth minimum distance estimator and a natural cubic spline smooth minimum distance estimator. Both use the Gao and Tsay bias correction and a multiplier-bootstrap simultaneous confidence band. No first-stage parametrization of the endogenous regressors is required; instruments enter through a nonparametric kernel.
 
 Written for ECON 622 at UBC. Paper: [`project_report_622.pdf`](project_report_622.pdf).
 
