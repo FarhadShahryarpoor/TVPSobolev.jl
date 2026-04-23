@@ -10,7 +10,7 @@
 
 <br/>
 
-<img src="figures/mc/lzh_median_rep_T800.png" width="780" alt="TVPSobolev.jl estimation output on the LZH design with T=800."/>
+<img src="figures/mc_ncs/lzh_median_rep_T800.png" width="780" alt="TVPSobolev.jl estimation output on the LZH design with T=800."/>
 
 <sub><b>Intercept θ₁(τ) and slope θ₂(τ)</b>, LZH design, <i>T = 800</i>.
 <code>—</code> truth · <code>—</code> estimate · <code>- -</code> 95% pointwise CI · <code>···</code> 95% simultaneous band.</sub>
