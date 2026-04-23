@@ -37,7 +37,7 @@ where
 
 Two estimators are provided: a natural linear spline smooth minimum distance estimator and a natural cubic spline smooth minimum distance estimator. Both use the Gao and Tsay bias correction and a multiplier-bootstrap simultaneous confidence band. No first-stage parametrization of the endogenous regressors is required; instruments enter through a nonparametric kernel.
 
-Written for ECON 622 at UBC. Paper: [`project_report_622.pdf`](project_report_622.pdf).
+Written for ECON 622 at UBC. Report/Paper: [`project_report_622.pdf`](project_report_622.pdf).
 
 ## Install
 
