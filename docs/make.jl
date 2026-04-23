@@ -20,3 +20,8 @@ makedocs(;
   checkdocs = :none,
   warnonly = [:missing_docs, :cross_references],
 )
+
+deploydocs(;
+  repo = "github.com/FarhadShahryarpoor/TVPSobolev.jl",
+  devbranch = "main",
+)
